@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activity.AssignmentActivity">
+
+    <TextView
+        android:id="@+id/tvTitleAsm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/leaguegothic_regular"
+        android:gravity="center"
+        android:text="Add Assignment"
+        android:textColor="@color/black"
+        android:textSize="48dp" />
+
+    <TextView
+        android:id="@+id/tv_asmClassName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/times_newroman"
+        android:gravity="center"
+        android:text="Class Name:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spn_asmClassName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hapticFeedbackEnabled="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_border"
+        android:fontFamily="@font/leaguegothic_regular"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/tv_asmModuleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/times_newroman"
+        android:gravity="center"
+        android:text="Module Name:"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spn_asmModuleName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hapticFeedbackEnabled="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_border"
+        android:fontFamily="@font/leaguegothic_regular"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/tv_trainerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/times_newroman"
+        android:gravity="center"
+        android:text="Trainer Name"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spn_asmTrainerName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hapticFeedbackEnabled="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/spinner_border"
+        android:fontFamily="@font/leaguegothic_regular"
+        android:spinnerMode="dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="right|center">
+
+        <Button
+            android:id="@+id/btn_saveASM"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/times_newroman"
+            android:textStyle="normal"
+            android:background="@drawable/btnsaveasm"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/btn_backASM"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/times_newroman"
+            android:textStyle="normal"
+            android:background="@drawable/btnbackasm"
+            android:text="Back"/>
+
+    </LinearLayout>
+
+</LinearLayout>

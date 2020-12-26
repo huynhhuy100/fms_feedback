@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:gravity="center"
+    android:background="@drawable/et_custom_dialog"
+    android:layout_height="300dp">
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/warning2"
+        />
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Trainee already exists in the class"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/times_newroman"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_buttoncancel"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnOKK"
+            android:textSize="26sp"
+            android:fontFamily="@font/times_newroman"
+            android:text="Ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

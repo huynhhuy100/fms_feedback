@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#CCFC3C00"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/edt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:fontFamily="@font/leaguegothic_regular"
+        android:textSize="72dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/edt_title"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userName_til"
+            app:errorTextAppearance="@style/error_appearance"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_userName"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/userName">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/till_pass"
+            android:layout_marginTop="20dp"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_password"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/pass"
+                android:inputType="textPassword">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/id_spinnerLogin"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/bg_sp"
+            android:fontFamily="@font/leaguegothic_regular"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/leaguegothic_regular"
+                android:checked="false">
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/tv_remember"
+                android:layout_width="163dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="@string/checkbox"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:background="@drawable/bg_login"
+            android:layout_marginTop="30dp"
+            android:text="@string/btn_login"
+            android:fontFamily="@font/leaguegothic_regular"
+            android:textStyle="normal"
+            android:textColor="#FC3C00"
+            android:textSize="80px"
+            android:layout_width="140dp"
+            android:layout_height="63dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

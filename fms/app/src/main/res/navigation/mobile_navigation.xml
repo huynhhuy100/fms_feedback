@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="vn.com.r2s.fms.ui.assignment.AssignmentFragment"
+        android:label="@string/menu_asm"
+        app:defaultNavHost="true"
+        tools:layout="@layout/fragment_assignment" />
+
+    <fragment
+        android:id="@+id/nav_traineefeedback"
+        android:name="vn.com.r2s.fms.ui.traineefeedback.TraineeFeedbackFragment"
+        android:label="@string/menu_traineefeedback"
+        tools:layout="@layout/fragment_traineefeedback" />
+
+    <fragment
+        android:id="@+id/nav_assignment"
+        android:name="vn.com.r2s.fms.ui.assignment.AssignmentFragment"
+        android:label="@string/menu_asm"
+        tools:layout="@layout/fragment_assignment" />
+
+    <fragment
+        android:id="@+id/nav_typefeedback"
+        android:name="vn.com.r2s.fms.ui.typefeedback.TypeFeedbackFragment"
+        android:label="@string/menu_typefeedback"
+        tools:layout="@layout/fragment_typefeedback" />
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="vn.com.r2s.fms.ui.feedback.FeedbackFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/fragment_feedback" />
+
+
+    <fragment
+        android:id="@+id/nav_class"
+        android:name="vn.com.r2s.fms.ui.classic.ClassicFragment"
+        android:label="Class"
+        tools:layout="@layout/fragment_classic" />
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="vn.com.r2s.fms.ui.result.ResultFragment"
+        android:label="@string/menu_result"
+        tools:layout="@layout/fragment_result" />
+    <fragment
+        android:id="@+id/nav_enrollment"
+        android:name="vn.com.r2s.fms.ui.enrollment.EnrollmentFragment"
+        android:label="@string/menu_enrollment"
+        tools:layout="@layout/fragment_enrollment" />
+    <fragment
+        android:id="@+id/nav_module"
+        android:name="vn.com.r2s.fms.ui.module.ModuleFragment"
+        android:label="@string/menu_module"
+        tools:layout="@layout/fragment_module" />
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="vn.com.r2s.fms.ui.question.QuestionFragment"
+        android:label="@string/menu_question"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/nav_join"
+        android:name="vn.com.r2s.fms.ui.join.JoinFragment"
+        android:label="fragment_join"
+        tools:layout="@layout/fragment_join" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="vn.com.r2s.fms.ui.fragment_contact"
+        android:label="@string/menu_result"
+        tools:layout="@layout/fragment_contact" />
+    <!--<fragment-->
+    <!--    android:id="@+id/nav_logout"-->
+    <!--    android:name="vn.com.r2s.fms.ui.result.ResultFragment"-->
+    <!--    android:label="@string/menu_logout"-->
+    <!--    tools:layout="@layout/fragment_result" />-->
+</navigation>

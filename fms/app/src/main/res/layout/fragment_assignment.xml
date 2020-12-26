@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ui.assignment.AssignmentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/leaguegothic_regular"
+            android:layout_gravity="center"
+            android:text="Assignment"
+            android:textColor="@color/black"
+            android:textSize="44sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            app:cardBackgroundColor="#3870FF"
+            app:cardCornerRadius="25dp">
+
+            <Button
+                android:id="@+id/btnAddASM"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_add_24" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edt_searchASM"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:hint="Search"
+            android:background="@drawable/bg_search"
+            android:fontFamily="@font/times_newroman"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_searchASM"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="22dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/times_newroman"
+            android:textStyle="normal"
+            android:background="@drawable/btnbackasm"
+            android:text="Search"/>
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_weight="1"
+            android:id="@+id/rec_Assignment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+</LinearLayout>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
+    tools:context=".Activity.TraineeFeedbackActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/leaguegothic_regular"
+        android:gravity="center"
+        android:text="TRAINING Module Feedback"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvtraineemodulename"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Module: " />
+
+            <TextView
+                android:id="@+id/tvtraineeclassname"
+                android:layout_marginTop="10dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Class: " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="80dp"
+                android:background="@drawable/account" />
+
+            <TextView
+                android:id="@+id/tvtraineeusername"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Trainee" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="TOPIC/LESSION EVALUATION"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A. GENERAL COMMENT"/>
+    <EditText
+        android:id="@+id/tvtraineecomment"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/et_cust"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B. DETAIL EVALUATION"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="290dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Training program and content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.1 The training objective"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"/>
+            <RadioGroup
+                android:id="@+id/radiogr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/strongdisagree1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strongly Disagree" />
+
+                <RadioButton
+                    android:id="@+id/disagree1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="-32dp"
+                    android:text="Disagree" />
+
+                <RadioButton
+                    android:id="@+id/undecided1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UnDecided" />
+
+                <RadioButton
+                    android:id="@+id/agree1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginLeft="170dp"
+                    android:text="Agree" />
+
+                <RadioButton
+                    android:id="@+id/strongagree1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strong Agree" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.2 The course is useful for my work. (Khoá học có ích cho công việc của tôi)"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"/>
+
+            <RadioGroup
+                android:id="@+id/radiogr2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/strongdisagree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strongly Disagree" />
+
+                <RadioButton
+                    android:id="@+id/disagree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="-32dp"
+                    android:text="Disagree" />
+
+                <RadioButton
+                    android:id="@+id/undecided2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UnDecided" />
+
+                <RadioButton
+                    android:id="@+id/agree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginLeft="170dp"
+                    android:text="Agree" />
+
+                <RadioButton
+                    android:id="@+id/strongagree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strong Agree" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.3 The material distribuced were pertiment and helpful (Tài liệu học tập phù hợp và bổ ích)"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"/>
+
+            <RadioGroup
+                android:id="@+id/radiogr3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/strongdisagree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strongly Disagree" />
+
+                <RadioButton
+                    android:id="@+id/disagree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="-32dp"
+                    android:text="Disagree" />
+
+                <RadioButton
+                    android:id="@+id/undecided3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UnDecided" />
+
+                <RadioButton
+                    android:id="@+id/agree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginLeft="170dp"
+                    android:text="Agree" />
+
+                <RadioButton
+                    android:id="@+id/strongagree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strong Agree" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Trainer/Coach"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.1 The trainer is knowledge in the topic/course training subject area (Giảng viên giàu kiến thức trong lĩnh vực đang dạy)"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"/>
+
+            <RadioGroup
+                android:id="@+id/radiogr4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/strongdisagree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strongly Disagree" />
+
+                <RadioButton
+                    android:id="@+id/disagree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="-32dp"
+                    android:text="Disagree" />
+
+                <RadioButton
+                    android:id="@+id/undecided4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UnDecided" />
+
+                <RadioButton
+                    android:id="@+id/agree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginLeft="170dp"
+                    android:text="Agree" />
+
+                <RadioButton
+                    android:id="@+id/strongagree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strong Agree" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Course organization"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.1 The Class Admin was supportive and helpful (providding accourate and timelu and professtional manners) (Quản lý lớp hỗ trợ hiệu quả và nhiệt tình)"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"/>
+
+            <RadioGroup
+                android:id="@+id/radiogr5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/strongdisagree5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strongly Disagree" />
+
+                <RadioButton
+                    android:id="@+id/disagree5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="-32dp"
+                    android:text="Disagree" />
+
+                <RadioButton
+                    android:id="@+id/undecided5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UnDecided" />
+
+                <RadioButton
+                    android:id="@+id/agree5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-32dp"
+                    android:layout_marginLeft="170dp"
+                    android:text="Agree" />
+
+                <RadioButton
+                    android:id="@+id/strongagree5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strong Agree" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Other"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.1 What did you like most about topic/module? (Những điểm bạn thích nhất ở môn học/khóa học này)"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"/>
+
+        <RadioGroup
+            android:id="@+id/radiogr6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/strongdisagree6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strongly Disagree" />
+
+            <RadioButton
+                android:id="@+id/disagree6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-32dp"
+                android:text="Disagree" />
+
+            <RadioButton
+                android:id="@+id/undecided6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UnDecided" />
+
+            <RadioButton
+                android:id="@+id/agree6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-32dp"
+                android:layout_marginLeft="170dp"
+                android:text="Agree" />
+
+            <RadioButton
+                android:id="@+id/strongagree6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strong Agree" />
+        </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recycle_traineefb"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="340dp"/>-->
+
+
+    <Button
+        android:id="@+id/tvtraineesubmit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/item_buttonsave"
+        android:text="Submit"/>
+</LinearLayout>
+

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">FMS222</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Feedback Management System</string>
+    <string name="nav_header_subtitle">r2s@r2s.com.vn</string>
+    <string name="nav_header_desc">Feedback Management System</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_classis">ClassisActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="want"> Do you want to delete</string>
+    <string name="classic">  this class !</string>
+    <string name="add">Add Success!</string>
+    <string name="OK">OK</string>
+    <string name="sure">Are you sure?</string>
+    <string name="menu_typefeedback">Type Feedback</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="typefeedbackchoose">Chọn Type Feedback</string>
+    <string name="menu_traineefeedback">Trainee Feedback</string>
+    <!--    Join-->
+    <string name="tryanother">You already join this
+Module, please try another!!!</string>
+    <string name="Invalid">Invalid Registation Code!!</string>
+    <!--    Login-->
+    <string name="checkbox">Remember Password</string>
+    <string name="userName">User Name</string>
+    <string name="pass">Passworsd</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="dialog">Login Failed, Check Your
+    Login Details</string>
+    <string name="classid">Class ID:</string>
+    <string name="className">Class Name:</string>
+    <string name="number">Number of Trainee:</string>
+    <string name="traineeList">Trainee List</string>
+    <string name="numberof">Number</string>
+    <string name="traineeId">Trainee ID:</string>
+    <string name='traineeName'>Trainee Name:</string>
+    //du lieu spinner
+    <string-array name="array_item">
+        <item>LT14301</item>
+        <item>LT14302</item>
+        <item>LT14303</item>
+        <item>LT14304</item>
+        <item>LT14305</item>
+    </string-array>
+    <string-array name="classes">
+        <item>All</item>
+        <item>Test</item>
+        <item>Mobile</item>
+        <item>Web</item>
+
+    </string-array>
+    <string-array name="array_item_topic">
+        <item>Topic14301</item>
+        <item>Topic14302</item>
+        <item>Topic14303</item>
+        <item>Topic14304</item>
+        <item>Topic14305</item>
+    </string-array>
+
+    <!--    String navigation drawer-->
+    <string name="menu_home">Home</string>
+    <string name="menu_asm">Assignment</string>
+    <string name="menu_class">Class</string>
+    <string name="menu_module">Module</string>
+    <string name="menu_enrollment">Enrollment</string>
+    <string name="menu_result">Result</string>
+    <string name="menu_question">Question</string>
+    <string name="menu_contact">Contact</string>
+    <string name="menu_logout">Log out</string>
+
+</resources>

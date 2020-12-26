@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--    Spinner-->
+    <LinearLayout
+        android:id="@+id/lnSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvModule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Module"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spModule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnSp"
+        android:gravity="center"
+        android:text="Feedback Result"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lnTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Strongly Disagree"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Disagree"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Neutral"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Agree"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Strongly Agree"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scTable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnTitle"
+        android:layout_marginBottom="80dp"
+        android:background="#FCC97D"
+        android:scrollbars="none">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:stretchColumns="0,1,2,3,4">
+
+            <TextView
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TRAINING COURCE FEEDBACK FORM"
+                android:textColor="#FD3434"
+                android:textSize="15sp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="LESSON VALUATION"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:padding="5dp"
+                android:text="B. DETAIL EVALUATION"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <!--Thống kê thứ nhất-->
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="I. Training program and content"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="-The trainning objective"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="- The Module is useful for my work. (Khóa học có ích cho công việc của tôi)"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="- The material distributed were pertinent and helpful (Tài liệu học tập phù hợp và bổ ích)"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <!--Thống kê thứ hai-->
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="II. Trainer/Coach"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="- The trainer is instruction were clear and understandable (Giảng viên hướng dẫn dễ dàng dễ hiểu)"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <!--  Thống kê thứ ba-->
+            <TextView
+                android:layout_margin="2dp"
+                android:text="III. Course organization"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="- The class Admin was supportive and helpful (providing accurate and timelu and professional manners) (Quản lý lớp hỗ trợ nhiệt tình)"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+            <!--  Thống kê thứ bốn-->
+            <TextView
+                android:layout_margin="2dp"
+                android:text="IV. Other"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="2dp"
+                android:text="- What did you like most about topic/Module?(Những điểm bạn thích nhất ở môn học/khóa học này)"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorBlack" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorRed" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dp"
+                    android:text="Ctrl-O"
+                    android:textColor="@color/colorRed" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_result"
+            android:text="Show overview"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_result"
+            android:text="View Comment"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_result"
+            android:text="Show details"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>

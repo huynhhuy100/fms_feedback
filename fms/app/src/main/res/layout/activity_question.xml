@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".QuestionActivity">
+
+    <TextView
+        android:fontFamily="@font/leaguegothic_regular"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add Question"
+        android:textSize="40dp"
+        android:id="@+id/tvTitle"/>
+
+    <TextView
+        android:id="@+id/tvTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topic Name: "
+        android:textStyle="bold"
+        android:layout_below="@+id/tvTitle"
+        android:textSize="15dp" />
+
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/line3456"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvTP"
+        android:background="@drawable/et_cust">
+        <Spinner
+            android:id="@+id/spinnerTopic"
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+        <TextView
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            android:textSize="20dp"
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvTP"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:background="#B8B5B5">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvQC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question Content: "
+        android:textStyle="bold"
+        android:layout_below="@+id/line3456"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tvQC"
+        android:background="@drawable/et_cust"/>
+
+    <EditText
+        android:layout_below="@+id/tvQC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="demoTest"
+        android:textSize="20dp"
+        android:id="@+id/edt_QuestionContent"/>
+<!--        android:fontFamily="@font/fonttimes_newroman"-->
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/line1"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        android:id="@+id/btnOk"
+        android:text="Yes!" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btnOk"
+        android:layout_below="@id/line1"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btn_Cancel"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5252"
+        android:text="Cancel" />
+
+
+
+</RelativeLayout>

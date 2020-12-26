@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_traineefeedback">
+
+    <fragment
+        android:id="@+id/nav_traineefeedback"
+        android:name="vn.com.r2s.fms.ui.traineefeedback.TraineeFeedbackFragment"
+        android:label="@string/menu_traineefeedback"
+        tools:layout="@layout/fragment_traineefeedback" />
+
+
+    <fragment
+        android:id="@+id/nav_class"
+        android:name="vn.com.r2s.fms.ui.classic.ClassicFragment"
+        android:label="Class"
+        tools:layout="@layout/fragment_classic" />
+
+    <fragment
+        android:id="@+id/nav_module"
+        android:name="vn.com.r2s.fms.ui.module.ModuleFragment"
+        android:label="@string/menu_module"
+        tools:layout="@layout/fragment_module" />
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="vn.com.r2s.fms.ui.question.QuestionFragment"
+        android:label="@string/menu_question"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/nav_join"
+        android:name="vn.com.r2s.fms.ui.join.JoinFragment"
+        android:label="fragment_join"
+        tools:layout="@layout/fragment_join" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="vn.com.r2s.fms.ui.fragment_contact"
+        android:label="@string/menu_result"
+        tools:layout="@layout/fragment_contact" />
+    <!--<fragment-->
+    <!--    android:id="@+id/nav_logout"-->
+    <!--    android:name="vn.com.r2s.fms.ui.result.ResultFragment"-->
+    <!--    android:label="@string/menu_logout"-->
+    <!--    tools:layout="@layout/fragment_result" />-->
+</navigation>
